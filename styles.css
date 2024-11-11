@@ -1,0 +1,109 @@
+/* Basic styling for layout and form elements */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 20px;
+    animation: slide 5s ease-in-out infinite; 
+    white-space: nowrap; 
+  }
+  
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: grey;
+  }
+  
+  input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: lightgreen;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: green;
+  }
+  
+  /* Styling for the display section */
+  .display-section {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    text-align: center;
+  }
+  
+  th {
+    background-color: orange;
+    color: white;
+  }
+  
+  .action-buttons button {
+    padding: 5px 10px;
+    margin: 2px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: lightseagreen;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: lightsalmon;
+    color: white;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%); /* Start from far left */
+    }
+    50% {
+      transform: translateX(0); /* Move to the original position */
+    }
+    100% {
+      transform: translateX(100%); /* Move to far right */
+    }
+  }
+
+  
+  
